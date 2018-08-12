@@ -1,7 +1,7 @@
 #The first steps (Backend)
 
 ### Setup
-    *Just have python and flask installed
+    Just have python and flask installed
 
 ### Directory Format 
     You can just copy everything that is in this step.
@@ -33,18 +33,18 @@
     To add your own routes (website.com/[ROUTE]) all you have to do is the following.
 
     ```python
-        import flask, os
-        from flask import render_template, Flask
+     import flask, os
+     from flask import render_template, Flask
 
-        app = flask.Flask(__name___)
+     app = flask.Flask(__name___)
 
-        @app.route('/') #at the base route (website.com/)
-        def home():
-            return flask.render_template('home.html')
+     @app.route('/') #at the base route (website.com/)
+     def home():
+        return flask.render_template('home.html')
 
-        if __name__ == '__main__':
-            port = int(os.environ.get('PORT', 5000)
-            app.run(debug=True, host='0.0.0.0', port=port)
+     if __name__ == '__main__':
+        port = int(os.environ.get('PORT', 5000)
+        app.run(debug=True, host='0.0.0.0', port=port)
     ```
 
     This will get you going the 'root' directory of the website.
