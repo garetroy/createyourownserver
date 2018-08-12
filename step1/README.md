@@ -9,18 +9,9 @@ The format should be
 ```
     /
     |
-    |--static/ (This is where we will be putting images, javascript, css and others.
-             |
-             |---javascript/script.js
-             |
-             |---css/stylesheed.css
-             |
-             |---images/
-    |
     |--templates/ (This is where all html will go)
                 |
                 |---home.html
-    |
     |--app.py (The actual server)
 ```
 
@@ -57,3 +48,21 @@ You may have to alter this to get it to run on your own machine.
 
 Inorder to see what you have so far, simply run python3 app.py and navigate
 to 0.0.0.0:5000 in your web browser (may be different if you changed the ip)
+
+### Adding another webpage
+
+To add another website to our route we need to add two things.
+
+The first item is to add another .html to the templates folder.
+Lets name it secondpage.html
+
+we also need to add a new route to get to the new webpage..
+```python
+@app.route('/page2')
+def page2():
+    return flask.render_template('secondpage.html')
+```
+
+Now to access this webpage, start up your server, and go to 0.0.0.0:5000/page2
+
+Congragulations! You've got the backend going!
