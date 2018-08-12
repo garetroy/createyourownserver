@@ -11,9 +11,9 @@ The format should be
     |
     |--static/ (This is where we will be putting images, javascript, css and others.
              |
-             |---javascript/
+             |---javascript/script.js
              |
-             |---css/
+             |---css/stylesheed.css
              |
              |---images/
     |
