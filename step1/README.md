@@ -1,4 +1,4 @@
-#The first steps (Backend)
+# The first steps (Backend)
 
 ### Setup
     Just have python and flask installed
