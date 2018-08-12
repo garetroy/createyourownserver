@@ -32,7 +32,7 @@
 
     To add your own routes (website.com/[ROUTE]) all you have to do is the following.
 
-    ```python3 
+    ```python
         import flask, os
         from flask import render_template, Flask
 
